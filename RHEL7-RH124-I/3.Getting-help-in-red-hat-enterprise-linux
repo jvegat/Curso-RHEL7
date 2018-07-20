@@ -1,0 +1,7 @@
+Getting help in red hat enterprise linux
+- Se puede utilizar el comando "sudo mandb" para activar las funciones de man
+- El comando man + k devuelve una lista de los manuales relaciondos al argumento "man -k passwd"
+- Tambien se puede indicar el numero del manual, si solo existe un manual, por defecto cargará ese manual.
+
+- Otro comando que podemos consultar para entender comandos y/o propiedades, son el "man", "pinfo", "--help"
+-
