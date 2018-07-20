@@ -1,0 +1,57 @@
+Creating viewing and editing text files
+
+SALIDAS HACIA UN ARCHIVO
+*******************************
+- ">file" sobreescribe el contenido de un archivo con la salida stdout, el stderr se irá a pantalla
+    - find / -user >tmp/error.txt
+- ">>file" concatenamos el contenido de un archivo con la salida stdout, el stderr se irá a pantalla
+    - find / -user >>tmp/error.txt
+- "2>file" sobreescribe el contenido de un archivo con la salida stderr, el stdout se irá a pantalla
+    - find / -user 2>tmp/error.txt
+- "2>>file" concatenamos el contenido de un archivo con la salida stderr, el stdout se irá a pantalla
+    - find / -user 2>>tmp/error.txt
+- "2>/dev/null" descarta la salida de un stderr, el stdout se irá a pantalla
+    - find / -user 2>/dev/null
+- Se puede concatenar redirecciones
+    - find / -user 2> /dev/null >
+    
+EDICION DE ARCHIVOS
+*********************************
+
+Comando "vi" es para editar un archivo en linux
+Comando "vim" es para editar un archivo en linux
+
+Tecla "i" en modo de insercion
+Tecla "v" en modo visual
+
+Nos podemos en modo de comandos (Esc + Esc)
+ - "y * y" = copiar una linea
+ - " # + y + y " = Copiar un determinado numero de lineas, desde donde estamos posicionamos hacia abajo
+ " p - despues de haber copiado" = Comando para pegar
+ - "dd" = Comando para borrar, aplica igual que el comando para pegar
+ - " # + d + d " = Copiar un determinado numero de lineas, desde donde estamos posicionamos hacia abajo
+ 
+Nos podemos en modo visual (V)
+
+- "Shift + v" = Te permite selecionar lineas para copiar
+- "CTRL + v" = Te permite selecionar bloques para copiar
+ 
+Nos podemos en modo insert (I)
+
+- "Esc + Esc + u" = funciona como un control z, es retroceder los ultimos cambios.
+- "Esc + Esc + r" = funciona como un control y, es adelantar los ultimos cambios.
+
+En modo edicion en linus puedes usar el ":" + "Numero de linea" para posicionarte en una linea especifica.
+":%s/root/jorge/g" = Este comando hace la funcion de reemplazar, ":%s" = parametro set, "/root" = atributo que va a buscar, 
+"/jorge" = es el atributo que va a reemplzar el valor buscado, #g = global.
+
+Para guardar como.. = ":w nombre_archivo_nuevo.txt"
+
+
+
+
+
+
+
+
+
