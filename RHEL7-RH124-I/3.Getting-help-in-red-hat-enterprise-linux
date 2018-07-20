@@ -1,7 +1,25 @@
 Getting help in red hat enterprise linux
+
 - Se puede utilizar el comando "sudo mandb" para activar las funciones de man
 - El comando man + k devuelve una lista de los manuales relaciondos al argumento "man -k passwd"
 - Tambien se puede indicar el numero del manual, si solo existe un manual, por defecto cargará ese manual.
 
 - Otro comando que podemos consultar para entender comandos y/o propiedades, son el "man", "pinfo", "--help"
--
+
+REDHAT SUPPORT
+*********************************
+- Cuando tienes un evento de algo que esta pasando ejecutar "sosreport"
+
+- Primero se debe generar un numero de caso en el portal de RHEL
+- Luego ejecutar el comando y colocar ese numero de reporte, esto genera un reporte que debe ser enviado a RH para que te brinden soporte.
+    - Se guarda en el archivo /var/tmp
+- Para descomprimirlo debemos usar estos comandos "tar -Jxvf":
+    - Opcion -J = descomprime archivos *.xz
+    - Opcion -x = -x de extraer
+    - Opcion -v = de verbose para que te muestre cuando descomprime tipo debug
+    - Opcion -f = de file
+    
+- El comando redhat-support-tool, te permite generar un numero de caso por CLI
+- El equipo necesita tener acceso a internet, si no se debede hacer desde el portal web.
+
+
