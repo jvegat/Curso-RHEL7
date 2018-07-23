@@ -1,3 +1,16 @@
 Controlar el acceso a archivos con permisos de sistema de archivos
 
+El primer guien se refiere a que tipo de archivo o directorio (Tipo de objeto)
+Las sifguientes 3 lineas se separan en lectura escritura y ejhecucion (Usuario)
+Las siguientes tres lineas pertenecen a grupo (grupo)
+Las siguientes 3 lineas pertenecen a others (otros)
+
+El los permisos los valores numericos son:
+4 = lectura
+2 = escritura
+1 = ejecucion
+
+Ejemplo: 
+chmod 610 file01 - que es equivalkente al formato UGO = "chmod u=rw,g=r,o=rw file01"
+
 
