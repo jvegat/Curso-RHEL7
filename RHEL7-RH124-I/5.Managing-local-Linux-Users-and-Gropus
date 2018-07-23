@@ -2,10 +2,16 @@ Administrar usuarios locales de Linux y grupos
 
 USUARIOS Y GRUPOS
 *********************************************
-- Colocando "su - root" le indico que cambie de usuario pero a la vez que se pósicione en el home directory, por ejmplo si estoy en /var/log/  y escribo "su student" me va a llevar al usurio student pero seguire en el directorio /var/log/, pero su estando en esa ruta escribo "su - student" entonces entrare al usuario student y a la ves me llevara al home directoy
+- Colocando "su - root" le indico que cambie de usuario pero a la vez que se pósicione en el home directory, por ejmplo si estoy en 
+  /var/log/  y escribo "su student" me va a llevar al usurio student pero seguire en el directorio /var/log/, pero su estando en esa 
+  ruta escribo "su - student" entonces entrare al usuario student y a la ves me llevara al home directoy
+- Ejecutando "usermod -s -G wheel jorge" estoy agregando al usuario jorge al grupo whell, el cual brindara privilegios de ejecucion e 
+  instalacion por defecto.
+- Para verificar los logs que estan ejecutando con permisos root, se puede consultar el siguiente directorio /var/log/secure 
 
 
-GAINING SUPERUSERS ACCES
+
+ GAINING SUPERUSERS ACCES
 *********************************************
 
 GESTIONAR CUENTAS DE USUARIOS LOCALES
