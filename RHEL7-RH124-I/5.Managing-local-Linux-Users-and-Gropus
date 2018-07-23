@@ -10,12 +10,18 @@ USUARIOS Y GRUPOS
 - Para verificar los logs que estan ejecutando con permisos root, se puede consultar el siguiente directorio /var/log/secure 
 
 
-
  GAINING SUPERUSERS ACCES
 *********************************************
 
 GESTIONAR CUENTAS DE USUARIOS LOCALES
 *********************************************
+
+- User -L student = bloquea una cuenta
+- User -U student = desbloquea una cuenta
+
+- COn el comando change - d usuario = obliga a quye el usuario cambie su clave al moneto de ingresar
+
+  
 
 GESTION DE GRUPOS LOCALES
 *********************************************
