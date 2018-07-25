@@ -1,0 +1,8 @@
+ISET
+- Install = yum install httpd -y
+
+- Startup = systemctl start httpd.service
+
+- Enable = systemctl enable httpd.service
+
+- Test = firefox http://localhost o medicabas /etc/httpd/conf/httpd.conf
