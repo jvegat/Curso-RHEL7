@@ -10,3 +10,13 @@ tar -xvf = sirve para descomprimir archivos tar = tar xvf etc.tar
 tar -xzvf = sirve para descomprimir archivos tar.gz = tar xzvf etc.tar.gz
 tar -xjvf = sirve para descomprimir archivos tar.bz2 = tar xjvf etc.tar.bz2
 tar -xJvf = sirve para descomprimir archivos tar.xz = tar xJvf etc.tar.xz
+
+scp = archivo para copiar en red
+scp -rp = "recursivo y pertenencia"
+scp -rp etc.tar* root@desktop1:/tmp/ = esto es para depositar haccia una maquina distinta
+scp -rp root@desktop1:/tmp/ /tmp/ = esto es para traer desde una maquina distinta hacia nuestra maquina
+
+rsync -arv file* root@desktop1:/tmp/files/ = este comando sirve para sincronizar dos carpetas en diferentes maquina, nos permite copiar solo lo que falta en la otra carpeta
+rsync -arvn file* root@desktop1:/tmp/files/ = este comando hace lo mismo que el de arriba pero sol hace una pruebita
+
+
