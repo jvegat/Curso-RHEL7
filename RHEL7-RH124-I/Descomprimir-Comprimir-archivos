@@ -1,0 +1,12 @@
+du -sh * = sirve para ver el peso de los archivos en un directorio
+tar -c = poara crear un compromido
+tar -cvf = poara crear un compromido - tar -cvf etc.tar /etc
+tar -czvf = para crear archivos .gz - tar -czvf etc.tar.gz /etc
+tar -cjvf = para crear archivos .bz2 - tar -czvf etc.tar.bz2 /etc
+tar -cJvf = para crear archivos .xz - tar -czvf etc.tar.xz /etc
+tar -tf etc.tar = sirve para listar los archivos de un comprimido
+
+tar -xvf = sirve para descomprimir archivos tar = tar xvf etc.tar
+tar -xzvf = sirve para descomprimir archivos tar.gz = tar xzvf etc.tar.gz
+tar -xjvf = sirve para descomprimir archivos tar.bz2 = tar xjvf etc.tar.bz2
+tar -xJvf = sirve para descomprimir archivos tar.xz = tar xJvf etc.tar.xz
